@@ -30,7 +30,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Noto Sans'
+      'Montserrat'
     ],
     htmlFontSize: 10,
     fontSize: 10
