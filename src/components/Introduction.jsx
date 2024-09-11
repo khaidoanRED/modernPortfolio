@@ -1,5 +1,3 @@
-import React from 'react'
-
 import ButtonCustom from './ButtonCustom'
 
 import Typography from '@mui/material/Typography'

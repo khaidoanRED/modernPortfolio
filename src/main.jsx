@@ -1,9 +1,6 @@
 //react
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-//local
-import ErrorPage from './error-page.jsx'
-import Root from './routes/Root.jsx'
 // mui
 import CssBaseline from '@mui/material/CssBaseline'
 import { ThemeProvider } from '@mui/material/styles'
@@ -14,6 +11,9 @@ import {
   RouterProvider
 } from 'react-router-dom'
 
+//local
+import ErrorPage from './error-page.jsx'
+import Root from './routes/Root.jsx'
 const router = createBrowserRouter([
   {
     path: '/',

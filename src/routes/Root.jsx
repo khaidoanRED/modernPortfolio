@@ -1,9 +1,8 @@
-import React from 'react'
-import Header from '~/components/Header'
-import Footer from '~/components/Footer'
 import { Box, Container } from '@mui/material'
-import { ThemeProvider } from '@mui/material'
+
+import Header from '~/components/Header'
 import Introduction from '~/components/Introduction'
+import Footer from '~/components/Footer'
 function Root() {
   return (
     <Box>
