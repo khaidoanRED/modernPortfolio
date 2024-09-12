@@ -1,4 +1,4 @@
-import { Box, Button, Link, Typography } from '@mui/material'
+import { Box, Button, Container, Link, Typography } from '@mui/material'
 
 import { Link as RouterLink } from 'react-router-dom'
 
@@ -6,16 +6,12 @@ import DarkMode from './DarkMode'
 const Header = () => {
 
   return (
-    <Box
+    <Container maxWidth='xl'
       sx={{
+        padding: '24px 0',
         display : 'flex',
         alignItems : 'center',
-        justifyContent : 'space-between',
-        padding: '24px 0',
-        position:'sticky',
-        top: 0,
-        left: 0,
-        right: 0
+        justifyContent : 'space-between'
       }}
     >
       <Box>
@@ -51,7 +47,7 @@ const Header = () => {
         >Contact</Link>
         <DarkMode/>
       </Box>
-    </Box>
+    </Container>
   )
 }
 

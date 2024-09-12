@@ -1,14 +1,32 @@
 import Typography from '@mui/material/Typography'
 import ButtonCustom from './ButtonCustom'
 import InsertLinkIcon from '@mui/icons-material/InsertLink'
-function ProjectView({ name, desc, tech }) {
+import { Box } from '@mui/material'
+import CardMedia from '@mui/material/CardMedia'
+function ProjectView({ name, desc, tech, bgUrl }) {
   return (
-    <div>
+    <Box
+      // sx={{
+      //   border: '1px solid transparent',
+      //   '&:hover': {
+      //     borderImage: 'linear-gradient(#9358F7, #10D7E2) 20'
+      //   },
+      //   padding: '12px'
+      // }}
+    >
+      {
+        bgUrl ? <CardMedia
+          component="img"
+          alt="green iguana"
+          height="140"
+          image={`${bgUrl}`}
+        /> : <Box display='none'></Box>
+      }
       <Typography variant='h5' paddingBottom={'30px'}>{name}</Typography>
-      <Typography variant='subtitle1' paddingBottom={'30px'} maxWidth={'60%'}>{desc}</Typography>
+      <Typography variant='subtitle1' paddingBottom={'30px'} maxWidth={'66%'}>{desc}</Typography>
       <Typography variant='subtitle2' paddingBottom={'30px'}>{tech}</Typography>
       <ButtonCustom content={'Live demo'} startIcon={<InsertLinkIcon/>}/>
-    </div>
+    </Box>
   )
 }
 

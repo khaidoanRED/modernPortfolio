@@ -1,13 +1,13 @@
 import ButtonCustom from './ButtonCustom'
 
 import Typography from '@mui/material/Typography'
-import { Box, IconButton } from '@mui/material'
+import { Box, Container, IconButton } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import SouthIcon from '@mui/icons-material/South'
 function Introduction() {
   return (
-    <div>
+    <Container maxWidth='xl'>
       <Box paddingY='120px'>
         <Typography variant='subtitle2'>
           Hey, I&lsquo;m
@@ -52,7 +52,7 @@ function Introduction() {
           </IconButton>
         </Box>
       </Box>
-    </div>
+    </Container>
   )
 }
 
