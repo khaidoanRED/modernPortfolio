@@ -5,7 +5,7 @@ import ProjectView from './ProjectView'
 const Footer = () => {
   return (
     <Container maxWidth='xl'>
-      <Box sx={{ padding: '90px 0' }}>
+      <Box sx={{ padding: '40px 0' }}>
         <Typography
           sx={{
             textTransform: 'uppercase',

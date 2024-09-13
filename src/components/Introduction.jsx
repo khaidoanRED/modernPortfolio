@@ -30,7 +30,8 @@ function Introduction() {
       <Box sx={{
         display: 'flex',
         justifyContent:'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: '0 0 20px 0'
       }}>
         <Box sx={{
           display: 'flex',
@@ -42,7 +43,7 @@ function Introduction() {
 
         </Box>
         <Box>
-          <IconButton sx={{textAlign: 'center'}}>
+          <IconButton sx={{textAlign: 'center' }}>
             <SouthIcon sx={{
               transition: 'linear 0.4s',
               '&:hover': {

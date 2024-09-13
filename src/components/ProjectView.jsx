@@ -18,13 +18,16 @@ function ProjectView({ name, desc, tech, bgUrl }) {
         bgUrl ? <CardMedia
           component="img"
           alt="green iguana"
-          height="140"
+          height="240px"
           image={`${bgUrl}`}
+          sx={{
+            borderRadius: '4px'
+          }}
         /> : <Box display='none'></Box>
       }
       <Typography variant='h5' paddingBottom={'30px'}>{name}</Typography>
-      <Typography variant='subtitle1' paddingBottom={'30px'} maxWidth={'66%'}>{desc}</Typography>
-      <Typography variant='subtitle2' paddingBottom={'30px'}>{tech}</Typography>
+      <Typography variant='subtitle1' paddingBottom={'30px'} fontSize={18} maxWidth={'90%'} textAlign={'justify'}>{desc}</Typography>
+      <Typography variant='subtitle2' paddingBottom={'30px'} fontSize={16} color='#6CACE4'>{tech}</Typography>
       <ButtonCustom content={'Live demo'} startIcon={<InsertLinkIcon/>}/>
     </Box>
   )
